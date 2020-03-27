@@ -1,12 +1,14 @@
 {
   "name": "dawn-react-ui-lib",
   "version": "1.0.2",
+  "private": true,
+  "homepage": "https://hsiaofung.github.io/dawn-react-ui-lib",
   "description": "react ui component library",
   "author": "hfchou",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",  
+  "jsnext:main": "dist/index.es.js",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
