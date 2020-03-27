@@ -6,10 +6,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
-  "publishConfig": {
-    "registry": "http://192.168.205.13:8093/repository/npm-local/"
-  },
+  "jsnext:main": "dist/index.es.js",  
   "engines": {
     "node": ">=8",
     "npm": ">=5"
