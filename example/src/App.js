@@ -82,6 +82,10 @@ export default class App extends Component {
       {
         path: `${HOME_PAGE}/example`,
         main: props => <Example {...props} />
+      },
+      {
+        path: `${HOME_PAGE}/alert`,
+        main: props => <DocAlert {...props} />
       }
     ];
     // Document 分支頁
@@ -187,7 +191,7 @@ export default class App extends Component {
       }
     ];
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
           <Header />
           <Switch>

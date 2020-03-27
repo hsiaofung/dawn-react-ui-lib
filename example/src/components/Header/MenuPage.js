@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { HOME_PAGE, DOC } from "../../constants";
 import styled, { keyframes, css } from "styled-components";
+import { Link } from "react-router-dom";
 
 const dropDown = keyframes`
     from{
@@ -107,10 +108,10 @@ class MenuPage extends Component {
             <Title>PAGES</Title>
             <ul>
               <li>
-                <a href={`${HOME_PAGE}`}>Getting Started</a>
+                <Link to={`${HOME_PAGE}`}>Getting Started</Link>
               </li>
               <li>
-                <a href={`${HOME_PAGE}/${DOC}/alert`}>Document</a>
+                <Link to={`${HOME_PAGE}/${DOC}/alert`}>Document</Link>
               </li>
             </ul>
           </Pages>
