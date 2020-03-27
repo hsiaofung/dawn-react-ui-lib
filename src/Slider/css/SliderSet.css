@@ -1,0 +1,309 @@
+ .imgLightBox_mobile {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: -105%;
+  z-index: 99;
+  padding-top: 40px;
+}
+ .light-box-close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 30px;
+  background: white;
+}
+ .videoDialog {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: white;
+}
+ .videoMobileBtn {
+  width: 130px;
+  height: 40px;
+  border: 0px solid #e9e7e8;
+}
+ .BtnImg {
+  width: 50px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.BtnImg::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: url("../assets/play-btn-web.png") no-repeat center center;
+  z-index: 2;
+}
+ .BtnImgText {
+  display: inline-block;
+  vertical-align: middle;
+}
+ .videoItem {
+  width: 98.5%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+ .videoCloseBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  z-index: 99999;
+}
+ .videoClose {
+  font-size: 30px;
+}
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../assets/font/fontawesome-webfont.eot");
+  src: url("../assets/font/fontawesome-webfont-1.eot")
+      format("embedded-opentype"),
+    url("../assets/font/fontawesome-webfont-2.woff2") format("woff2"),
+    url("../assets/font/fontawesome-webfont-3.woff") format("woff"),
+    url("../assets/font/fontawesome-webfont.ttf") format("truetype"),
+    url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular")
+      format("svg");
+}
+ .imgSize {
+  max-width: 594px !important;
+  height: 594px;
+  outline: 0;
+  overflow: hidden;
+}
+ .imgDiv {
+  cursor: crosshair;
+  outline: none;
+  padding-left: -8px;
+}
+ .videoDiv {
+  cursor: default;
+}
+ .imgSize img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+ .imgSize_mobile {
+  max-width: 700px !important;
+  height: auto;
+  cursor: crosshair;
+  outline: 0;
+  overflow: hidden;
+  display: none !important;
+}
+ .imgSize_mobile img {
+  width: 100% !important;
+}
+ .imgSize_mobile video {
+  width: 100% !important;
+  height: auto;
+}
+ .small-slider {
+  display: flex;
+  margin-top: 10px;
+}
+ .imgSize2 {
+  max-width: 96px !important;
+  height: atuo;
+  border: 1px solid #e9e7e8;
+  cursor: pointer;
+  transition: border 0.5s;
+}
+.imgSize2:focus {
+  border: 1px solid #c69967;
+  outline: 0;
+}
+ .imgSize2 img {
+  width: 100%;
+}
+ .imageSize2VideoDiv {
+  position: relative;
+  left: 10%;
+  max-width: 96px !important;
+  height: 96px;
+  cursor: pointer;
+  transition: border 0.5s;
+}
+ .imageSize2VideoDiv:focus {
+  border: 1px solid #c69967;
+  outline: 0;
+}
+
+ .imageSize2VideoDiv::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  background: url("../assets/play-btn-web.png") no-repeat center center;
+  background-size: 35px 35px;
+  pointer-events: none;
+  z-index: 9999;
+}
+ .imageSize2Video {
+  width: 100%;
+  height: auto;
+}
+ .AsNavForTwo {
+  width: 72% !important;
+}
+ .slider_mobile {
+  display: none !important;
+}
+ .slick-prev,
+ .slick-next {
+  z-index: 10;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+ .slick-prev:hover,
+ .slick-prev:focus,
+ .slick-next:hover,
+ .slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+ .slick-prev:hover:before,
+ .slick-prev:focus:before,
+ .slick-next:hover:before,
+ .slick-next:focus:before {
+  opacity: 1;
+}
+ .slick-prev.slick-disabled:before,
+ .slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+ .sliderDiv .slick-prev:before,
+ .sliderDiv .slick-next:before,
+ .small-slider .slick-prev:before,
+ .small-slider .slick-next:before {
+  font-family: "FontAwesome";
+  font-size: 30px;
+  line-height: 1;
+  color: #000 !important;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ .slick-prev {
+  left: -15px;
+}
+[dir="rtl"] .slick-prev {
+  right: -25px;
+  left: auto;
+}
+ .slick-prev:before {
+  content: "\f104" !important;
+}
+[dir="rtl"] .slick-prev:before {
+  content: "\f104";
+}
+
+ .slick-next {
+  right: -25px;
+}
+[dir="rtl"] .slick-next {
+  right: auto;
+  left: -25px;
+}
+ .slick-next:before {
+  content: "\f105" !important;
+}
+[dir="rtl"] .slick-next:before {
+  content: "\f105";
+}
+ .slick-arrow {
+  z-index: 2;
+  background: transparent !important;
+}
+
+ .zoomup {
+  display: none !important;
+}
+ .slick-list {
+  height: auto !important;
+}
+ .mobileBtn {
+  display: none !important;
+}
+@media only screen and (max-width: 1200px) {
+  .imgSize_mobile {
+    display: block !important;
+  }
+  .slider_web {
+    display: none !important;
+  }
+  .slider_mobile {
+    display: block !important;
+  }
+  .AsNavForTwo {
+    width: 0% !important;
+    height: 50px;
+  }
+  .mobileBtn {
+    display: block !important;
+  }
+  .small-slider {
+    display: none !important;
+  }
+  .small-slider button {
+    display: none !important;
+  }
+  .imageSize2VideoDiv {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .videoItem {
+    width: 100%;
+    max-width: 700px !important;
+    max-height: 700px !important;
+  }
+}
+
+.slick-slide img {
+  display: block;
+  max-width: 100%
+}
+ 

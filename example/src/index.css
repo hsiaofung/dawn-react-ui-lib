@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "微軟正黑體",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 400;
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.8;
+}
+
+ul {
+  margin: 0;
+  padding-left: 15px;
+}
+
+li {
+  list-style: none;
+  font-size: 14px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  font-size: 15px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+button {
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "微軟正黑體",
+    sans-serif;
+}
+
+pre {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eae8e3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #795548;
+}
+
+::selection {
+  background-color: #bc937c;
+  color: #fff;
+}
+
+@keyframes slowlyBigger {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
